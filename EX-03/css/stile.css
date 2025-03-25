@@ -1,0 +1,45 @@
+body {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+div {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.wrapper div {
+    width: 30%;
+    height: 100px;
+    border: 10px solid rgb(255, 255, 255);
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+.wrapper div:nth-child(5) {
+    background-color: yellow
+}
+.wrapper div:nth-child(3n) {
+    margin-right: 0;
+}
+.wrapper {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: rgb(218, 249, 156);
+}
+
+.bianco {
+background-color: white
+border: 1px solid lightgrey 
+}
+
+.blue {
+    background-color: rgb(141, 141, 255);
+}
+.oblique {
+    font-style: oblique;
+    color: black;
+}
