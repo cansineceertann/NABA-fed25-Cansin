@@ -1,0 +1,38 @@
+body {
+    color: rgb(67, 67, 67);
+    background-color: rgb(194, 188, 188);
+}
+
+.box-model-test { 
+    border:  20px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+.box-model-test-01 {
+    background-color: white;
+}
+
+a:link {
+color: red;
+text-decoration: none;
+}
+
+a:visited{
+color:crimson;
+text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+    
+}
+a:active{
+    color: green;
+}
+a:focus{
+color:black
+}
+

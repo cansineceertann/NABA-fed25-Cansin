@@ -1,0 +1,49 @@
+body {
+    background-color: ivory;
+}
+
+ul li{
+    list-style-type: square;
+    display: block;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    padding:0;
+    margin: 0;
+}
+
+.em {
+    width:10em;
+}
+
+html{
+    font-size:16px;
+}
+
+ul{
+    font-size: 16px;
+}
+.rem{
+    font-size: 1.5rem;
+    width: 10rem;
+}
+
+.perc {
+    width: 50%;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    width: 1000px;
+    background-color: lightblue;
+}
+
+.vhwh {
+    width: 50vw;
+    height: 25vh;
+    box-sizing: border-box;
+}
