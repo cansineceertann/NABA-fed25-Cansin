@@ -37,6 +37,7 @@ h1{color: crimson;}
     animation-duration: 5s;
     animation-iteration-count: infinite;
     margin-left: 100px;
+    margin-bottom: 70px;
 }
 
 #hexagon::before {
@@ -52,7 +53,7 @@ h1{color: crimson;}
 }
 
 #hexagon:after {
-    content: '''';
+    content: '';
     position: absolute;
     bottom: -28px;
     left: 0;
@@ -86,7 +87,7 @@ h1{color: crimson;}
     width: 150px;
     height: 250px;
     display: flex;
-    align-items: center
+    align-items: center;
     justify-content: center;
     transition: border-radius 2s;
     cursor: progress;
@@ -94,3 +95,4 @@ h1{color: crimson;}
 .card .card:hover {
     border-radius: 60%;
 }
+S
