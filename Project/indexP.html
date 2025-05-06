@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Miley Cyrus Something Beautiful Countdown</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="poster">
+    <h1>Miley Cyrus Something Beautiful</h1>
+    <h2>New Album Drops In</h2>
+    <div id="countdown">
+      <div><span id="days">00</span><p>Days</p></div>
+      <div><span id="hours">00</span><p>Hours</p></div>
+      <div><span id="minutes">00</span><p>Minutes</p></div>
+      <div><span id="seconds">00</span><p>Seconds</p></div>
+    </div>
+    <p class="release-date">Release Date: May 30, 2025</p>
+  </div>
+
+  <script>
+    const targetDate = new Date("May 30, 2025 00:00:00").getTime();
+
+    const countdown = () => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days.toString().padStart(2, '0');
+      document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+    };
+
+    setInterval(countdown, 1000);
+    countdown();
+  </script>
+
+ <img src="C:\Users\cansi\OneDrive\Desktop\sb.jpg" />
+  <footer>
+    <p>&copy; 2025 Miley Cyrus Fan Club</p>
+  </footer>
+
+</body>
+</html>

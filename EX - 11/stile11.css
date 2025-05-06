@@ -1,0 +1,96 @@
+h1{color: crimson;}
+.cerchio{
+    border: 2px solid purple;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    transition: all 2s;
+    margin-bottom: 100px;
+}
+.cerchio:hover {
+    width: 200px;
+    transform: rotate(360deg);
+}   
+.cerchio div{
+    color: brown;
+    width: 100%;
+    text-align: center;
+}
+
+#hexagon {
+    width: 100px;
+    height: 57.735px;
+    background-color: yellow;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+    animation-name: cambiacolore;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-left: 100px;
+}
+
+#hexagon::before {
+    content: '';
+    position: absolute;
+    top: -28.5px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid blue;
+}
+
+#hexagon:after {
+    content: '''';
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid red;
+}
+#hexagon div{
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes cambiacolore {
+    0% {background-color:     red;    left: 0;}
+    33.33% {background-color: blue;   left: 100px;}
+    66.66% {background-color: green;  left: -100px;}
+    100% {background-color:   yellow; left:0;}
+
+}
+
+.card {
+    background-color:aqua;
+    width: 150px;
+    height: 250px;
+}
+
+.card .card {
+    background-color: cadetblue;
+    width: 150px;
+    height: 250px;
+    display: flex;
+    align-items: center
+    justify-content: center;
+    transition: border-radius 2s;
+    cursor: progress;
+}
+.card .card:hover {
+    border-radius: 60%;
+}

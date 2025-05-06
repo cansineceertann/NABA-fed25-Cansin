@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #ff6f91, #ff9671);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.poster {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#countdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#countdown div {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+#countdown span {
+  font-size: 2rem;
+  display: block;
+}
+
+.release-date {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ffeaea;
+}
