@@ -1,0 +1,14 @@
+body {
+    background: ivory;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+}
+video {
+    width: 800px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}

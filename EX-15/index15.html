@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and responsive image test</title>
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+<body>
+    <h1>Video and responsive image test</h1>
+
+    <video autoplay controls loop>
+        <!-- <source src="video/test.mp4" type="video/mp4"> -->
+        <source src="https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/serveFlavor/entryId/1_wk8iji4j/flavorId/1_khijx4f9/prn_folder/MNR/prn_id/Publish+Order+Part%3a+3843125-99+file+identifier%3a+3997767/prn_flavor/Source/prn_filename/FabricaDeArteAmericas" type="video/mp4">
+        Il tuo browser non supporta il tag video.
+    </video>
+
+    <div class="ytvideo"><iframe src="https://www.youtube.com/embed/ovRKVH_gMjM?si=iTkOcrd7yUMIeuxO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+    <!-- <img class="first-test" src="img/port-original.jpg" alt="National Portrait Gallery"> -->
+
+    <p>the image will change at 800px viewport width</p>
+    <picture class="third-test">
+        <source media="(max-width: 799px)" srcset="img/port-closeup.jpg" />
+        <source media="(min-width: 800px)" srcset="img/port-original.jpg" />
+        <img src="img/port-original.jpg" alt="Chris standing up holding his daughter Elva" />
+    </picture>
+
+    <!-- I have to fix! FIXME -->
+    <!-- <p>FIXME</p>
+    <img class="second-test"
+        srcset="img/port-mobile.jpg 480w, img/port-original.jpg 800w"
+        sizes="(max-width: 600px) 480px, 800px"
+        src="img/port-original.jpg"
+        alt="National Portrait Gallery" /> -->
+
+</body>
+</html>
