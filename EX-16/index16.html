@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Documento HTML</title>
+  <link rel="stylesheet" href="stile16.css">
+  <script src="pr.js"></script>
+  <!-- <script>
+    var block = document.getElementById('block');
+
+    block.addEventListener('click', function() {
+
+      if (block.getAttribute('class') == 'red') block.setAttribute('class', 'blue');
+    else block.setAttribute('class', 'red');
+    });
+  </script> -->
 </head>
 <body>
-  <link rel="stylesheet" href="stile16.css">
-<script src="js/pr.js"></script>
-<h1>Ciao, mondo!</h1>
-<p>Questa e una struttura base HTML.</p>
-<button id="button">Click me, please! </button>
-<div class="un-buon-partito"></div>
+  <h1>Ciao, mondo!</h1>
+  <p>Questa è una struttura base <span class="red">HTML</span>.</p>
+  <button id="pippo" class="red">Click me, please!</button>
+  <div class="un-buon-partito">Hey.</div>
+  <div class="un-buon-partito">Hey.</div>
 </body>
 </html>

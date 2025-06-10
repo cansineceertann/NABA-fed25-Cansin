@@ -1,15 +1,22 @@
-var block = document.getElementById('pippo');
+document.addEventListener('DOMContentLoaded', function() {
+   
 
-block.addEventListener('click', function() {
-    console.log('Block clicked!');
-  // Toggle the class between 'red' and 'blue'  
+    var block = document.getElementById('pippo');
 
-  if (block.getAttribute('class') == 'red') {
-    block.setAttribute('class', 'blue');
-    }
+    block.addEventListener('click', function() {
+        console.log("block clicked");
+        if (block.getAttribute('class') == 'red') {
+            block.setAttribute('class', 'blue');
+        } else {
+            block.setAttribute('class', 'red');
+        }
 
-  
-  else { block.setAttribute('class', 'red');
-    }
+        var elements = document.getElementsByClassName('un-buon-partito');
+        Array.from(elements).forEach(function(el) {
+            el.setAttribute('class', 'un-buon-partito un-partito-migliore');
+        });
+
+
+    });
+
 });
-
