@@ -78,7 +78,7 @@ h2 {
 
 /* Footer Styling */
 copyright {
-  position: fixed;
+  position: bottom;
   bottom: 10px;
   right: 10px;
   font-size: 1.2rem;
@@ -87,4 +87,36 @@ copyright {
   background: transparent;
 }
 
+
+.top-left {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.top-right {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+.top-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 100px;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.top-right a:hover {
+  text-decoration: underline;
+}
 
