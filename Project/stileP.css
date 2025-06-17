@@ -1,46 +1,48 @@
-/* Basic styling */
+/* === GENERAL PAGE STYLING === */
 body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: white;
-  display: flex;
+  color: rgb(255, 255, 255);
   justify-content: center;
   align-items: center;
   height: 100vh;
   font-family: sans-serif;
-  gap: 5rem; /* space between poster and image */
-  flex-wrap: wrap; /* allows stacking on smaller screens */
+  gap: 5rem;
+  flex-wrap: wrap;
+  cursor: url('miley-cursor.png'), auto;
 }
 
-.poster {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 10rem;
-  border-radius: 60px;
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
-  max-width: 1000px;
-  width: 100%;
-}
 
-h1 {
-  font-size: 12rem;
+/* Smaller styles only inside .poster-small */
+.poster-small h1 {
+  font-size: 4rem;
   margin-bottom: 2rem;
   letter-spacing: 3px;
   line-height: 1.1;
+  text-align: center;
+  margin-top: 200px;
+  color: burlywood;
 }
 
-h2 {
-  font-size: 4rem;
-  margin-bottom: 3rem;
+.poster-small h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: burlywood;
 }
 
-#countdown {
+.poster-small #countdown {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
+  text-align: center;
+  color:burlywood;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-#countdown div {
+.poster-small #countdown div {
   flex: 1;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -48,70 +50,56 @@ h2 {
   text-align: center;
 }
 
-#countdown span {
-  font-size: 8rem;
+.poster-small #countdown span {
+  font-size: 3rem;
   display: block;
   font-weight: bold;
 }
 
-#countdown p {
-  font-size: 3rem;
+.poster-small #countdown p {
+  font-size: 1.2rem;
   margin: 1rem 0 0;
 }
 
-.release-date {
+.poster-small .release-date {
   margin-top: 3rem;
-  font-size: 2.5rem;
-  color: #ffeaea;
+  font-size: 1.2rem;
+  color: burlywood;
+  text-align: center;
 }
 
-/* Image Styling */
+/* === IMAGE STYLING === */
 .image-container {
   max-width: 800px;
 }
 
 .album-image {
-  width: 100%;
+  width: 50%;
   border-radius: 40px;
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
 }
 
-/* Footer Styling */
-copyright {
-  position: bottom;
-  bottom: 10px;
-  right: 10px;
-  font-size: 1.2rem;
-  color: #aaa;
-  z-index: 9999;
-  background: transparent;
-}
-
-
+/* === FIXED CORNER TEXT === */
 .top-left {
   position: fixed;
-  top: 20px;
-  left: 20px;
-  font-size: 100px;
+  top: 50px;
+  left: 50px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-top: 100px;
-  margin-left: 100px;
 }
 
 .top-right {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  margin-top: 100px;
-  margin-right: 100px;
+  top: 50px;
+  right: 50px;
 }
 
 .top-right a {
   color: white;
   text-decoration: none;
-  margin-left: 100px;
-  font-size: 100px;
+  margin-left: 30px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -120,3 +108,62 @@ copyright {
   text-decoration: underline;
 }
 
+.youtube-video {
+  position: center;
+  margin-left: 600px;
+  margin-top: 100px;
+}
+
+/* === FOOTER === */
+footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: #aaa;
+  z-index: 9999;
+}
+
+/* === PRELOADER === */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 5s;
+  pointer-events: none;
+}
+
+#preloader img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  animation: growMiley 5s ease forwards;
+}
+
+@keyframes growMiley {
+  0% {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

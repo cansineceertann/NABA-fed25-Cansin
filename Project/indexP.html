@@ -8,32 +8,35 @@
 </head>
 <body>
 
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="miley-cyrus.jpg" alt="Loading Miley" />
+  </div>
+
+  <!-- Poster Content -->
   <div class="poster">
-    <h1>Miley Cyrus<br>Something Beautiful</h1>
-    <h2>New Album Drops In</h2>
-    <div id="countdown">
-      <div><span id="days">00</span><p>Days</p></div>
-      <div><span id="hours">00</span><p>Hours</p></div>
-      <div><span id="minutes">00</span><p>Minutes</p></div>
-      <div><span id="seconds">00</span><p>Seconds</p></div>
+    <div class="poster-small">
+      <h1>Something Beautiful</h1>
+      <h2>New Album Drops In</h2>
+      <div id="countdown">
+        <div><span id="days">00</span><p>Days</p></div>
+        <div><span id="hours">00</span><p>Hours</p></div>
+        <div><span id="minutes">00</span><p>Minutes</p></div>
+        <div><span id="seconds">00</span><p>Seconds</p></div>
+      </div>
+      <p class="release-date">Release Date: May 30, 2025</p>
     </div>
-    <p class="release-date">Release Date: May 30, 2025</p>
   </div>
 
-  <div class="image-container">
-    <img src="miley-cyrus.jpg" alt="Miley Cyrus" class="album-image" />
-  </div>
-
-  <div class="copyright">
+  <!-- Footer -->
+  <footer>
     &copy; 2025 Miley Cyrus Fan Club
-  </div>
+  </footer>
 
-
-
-  <!-- Top-left text -->
+  <!-- Top-left brand text -->
   <div class="top-left">MILEY CYRUS</div>
 
-  <!-- Top-right text with links -->
+  <!-- Top-right navigation links -->
   <div class="top-right">
     <a href="#">FILM</a>
     <a href="#">MUSIC</a>
@@ -41,25 +44,19 @@
     <a href="#">MCF</a>
   </div>
 
-  <!-- Main content -->
+  <!-- Main content section -->
   <div class="main-content">
-    <!-- Your existing content goes here -->
+    <!-- Embedded YouTube video -->
+    <div class="youtube-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/WyqeqgmfRFE?si=xDJXTv4-btrWeRPG&amp;start=5"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
   </div>
 
-  <!-- ...existing code... -->
-<div class="main-content">
-  <!-- Your existing content goes here -->
-
-  <!-- Embedded YouTube video -->
-  <div class="youtube-video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/s8h4YNaX2aM?si=MX-wBcElnc6DdQnV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/aDynfheDigQ?si=1ZLqCWtVh_cUe5i5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-</div>
-<!-- ...existing code... -->
-
-
-
+  <!-- Countdown Script -->
   <script>
     const targetDate = new Date("May 30, 2025 00:00:00").getTime();
 
@@ -80,6 +77,16 @@
 
     setInterval(countdown, 1000);
     countdown();
+  </script>
+
+  <!-- Preloader Cleanup Script -->
+  <script>
+    setTimeout(() => {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.remove();
+      }
+    }, 6000); // slightly longer than the fade animation
   </script>
 
 </body>
